@@ -38,7 +38,7 @@ const Navbar = ({ navItems }) => {
             ))}
           </NavMenu>
           <NavButton>
-            <StyledLink to='/signin'>Sign In</StyledLink>
+            <StyledLink to='/signup'>Sign Up</StyledLink>
           </NavButton>
         </Container>
       </Nav>
