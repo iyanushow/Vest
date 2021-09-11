@@ -23,7 +23,7 @@ const Sidebar = ({ navItems, toggleNav, isOpen }) => {
           ))}
         </Menu>
         <BtnWrapper>
-          <StyledLink to='/signin'>Sign In</StyledLink>
+          <StyledLink to='/signup'>Sign Up</StyledLink>
         </BtnWrapper>
       </Wrapper>
     </Container>
