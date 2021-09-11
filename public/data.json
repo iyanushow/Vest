@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "id": "about",
+      "topline": "Premium Investment Access",
+      "headline": "Lorem ipsum dolor sit amet consectetur.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione quos magni porro maxime consectetur!",
+      "img": "/images/svg-car.svg",
+      "imgAlt": "Car",
+      "btnLabel": "get started",
+      "btnRoute": "home"
+    },
+    {
+      "id": "discover",
+      "topline": "Discover a world investments",
+      "headline": "Lorem ipsum dolor sit amet consectetur.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione quos magni porro maxime consectetur!",
+      "img": "/images/svg-piggy.svg",
+      "imgAlt": "piggy bank",
+      "btnLabel": "learn more",
+      "btnRoute": "services"
+    },
+    {
+      "id": "contact",
+      "topline": "Curated services for your comfort",
+      "headline": "Lorem ipsum dolor sit amet consectetur.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quam ratione quos magni porro maxime consectetur Quam ratione quos magni porro maxime consectetur!",
+      "img": "/images/svg-rev.svg",
+      "imgAlt": "revenue",
+      "btnLabel": "contact us",
+      "btnRoute": "home"
+    }
+  ],
+  "nav": ["about", "discover", "services", "contact"]
+}
