@@ -7,12 +7,13 @@ import theme from './utils/theme';
 import './App.css';
 
 const App = () => {
+  const navItems = ['about', 'discover', 'services', 'sign in'];
   return (
     <Router>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Fragment>
-          <Navbar />
+          <Navbar navItems={navItems} />
         </Fragment>
       </ThemeProvider>
     </Router>

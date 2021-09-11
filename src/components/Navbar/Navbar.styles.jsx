@@ -78,12 +78,16 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  text-transform: capitalize;
+
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
+  &.hover {
+    color: ${(props) => props.theme.color.defaultMain};
+  }
   &.active {
-    border-bottom: 2px solid #01bf71;
+    border-bottom: 2px solid ${(props) => props.theme.color.defaultMain};
   }
 `;
 export const NavButton = styled.nav`
