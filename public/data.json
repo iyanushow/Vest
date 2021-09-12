@@ -8,7 +8,7 @@
       "img": "/images/svg-car.svg",
       "imgAlt": "Car",
       "btnLabel": "get started",
-      "btnRoute": "home"
+      "btnRoute": "contact"
     },
     {
       "id": "discover",
@@ -31,5 +31,24 @@
       "btnRoute": "home"
     }
   ],
-  "nav": ["about", "discover", "services", "contact"]
+  "services": [
+    {
+      "id": 1,
+      "icon": "/images/svg-remote.svg",
+      "heading": "Lorem ipsum",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": 2,
+      "icon": "/images/svg-prior.svg",
+      "heading": "Lorem ipsum",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": 3,
+      "icon": "/images/svg-car.svg",
+      "heading": "Lorem ipsum",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  ]
 }
