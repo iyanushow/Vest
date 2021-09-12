@@ -3,7 +3,7 @@ import { Link as RLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${(props) => (props.scroll ? '#000' : 'tranparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -83,11 +83,12 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  &.hover {
-    color: ${(props) => props.theme.color.defaultMain};
-  }
+
   &.active {
-    border-bottom: 2px solid ${(props) => props.theme.color.defaultMain};
+    border-bottom: 4px solid ${(props) => props.theme.color.defaultMain};
+  }
+  &:hover {
+    color: ${(props) => props.theme.color.defaultMain};
   }
 `;
 export const NavButton = styled.nav`

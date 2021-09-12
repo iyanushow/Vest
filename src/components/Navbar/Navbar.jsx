@@ -10,30 +10,54 @@ import {
   StyledLink,
 } from './Navbar.styles';
 import { FaBars } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import Sidebar from '../Sidebar';
 
-const Navbar = ({ navItems }) => {
+const Navbar = ({ navItems, toggleTop }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   const toggleNav = () => {
     console.log('clicked');
     setIsOpen(!isOpen);
   };
-  console.log(isOpen);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 80) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <Fragment>
-      <Nav>
+      <Nav scroll={scroll}>
         <Container>
-          <NavLogo to='/'>Vest</NavLogo>
+          <NavLogo to='/' onClick={toggleTop}>
+            Vest
+          </NavLogo>
           <MobileIcon onClick={toggleNav}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             {navItems.map((item, index) => (
               <NavItem key={index}>
-                <NavLink to={item}>{item}</NavLink>
+                <NavLink
+                  to={item}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >
+                  {item}
+                </NavLink>
               </NavItem>
             ))}
           </NavMenu>
