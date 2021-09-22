@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment } from 'react';
 import CtaButton from '../CtaButton';
 import {
   Container,
@@ -34,10 +34,6 @@ const Info = ({ data }) => {
                         <CtaButton
                           label={btnLabel}
                           route={btnRoute}
-                          smooth={true}
-                          spy={true}
-                          exact='true'
-                          offset={-80}
                           primary={i % 2 === 0 ? 1 : 0}
                           dark={i % 2 === 0 ? 1 : 0}
                         />
