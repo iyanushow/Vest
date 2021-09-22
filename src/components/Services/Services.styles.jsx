@@ -37,7 +37,6 @@ export const Wrapper = styled.div`
 
 export const Heading = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
   margin-bottom: 64px;
 
   @media (max-width: 480px) {
