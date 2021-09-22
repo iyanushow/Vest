@@ -1,5 +1,13 @@
+import ScrollTop from '../components/scroll';
+import Signup from '../components/Signup/Signup';
+
 const Auth = () => {
-  return <div>todo: sign up page</div>;
+  return (
+    <>
+      <ScrollTop />
+      <Signup />
+    </>
+  );
 };
 
 export default Auth;
