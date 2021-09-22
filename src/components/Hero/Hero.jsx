@@ -10,7 +10,7 @@ import {
 
 const Hero = () => {
   return (
-    <Container>
+    <Container id='home'>
       <HeroBkg>
         <VideoBkg loop autoPlay='autoplay' muted src='video/video.mp4' type='video/mp4' />
       </HeroBkg>
@@ -20,7 +20,7 @@ const Hero = () => {
           Join us and begin crafting your path to financial freedom. Get $50 investment credit on
           sign up
         </StyledParagraph>
-        <CtaButton label='get started' route='/signup' primary={1} dark={1} />
+        <CtaButton label='get started' type='router' route='/signup' primary={1} dark={1} />
       </Content>
     </Container>
   );
