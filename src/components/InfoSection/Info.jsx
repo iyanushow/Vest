@@ -22,20 +22,20 @@ const Info = ({ data }) => {
         data.map((section, i) => {
           const { id, topline, description, headline, btnLabel, btnRoute, img, imgAlt } = section;
           return (
-            <Container key={id} id={id} lightBkg={!(i % 2 === 0)}>
+            <Container key={id} id={id} lightBkg={i % 2 === 0}>
               <Wrapper>
-                <Row imgStart={!i % 2 === 0}>
+                <Row imgStart={i % 2 === 0}>
                   <ColumnUno>
                     <TextWrapper>
                       <Line>{topline}</Line>
-                      <Heading lightText={i % 2 === 0}>{headline}</Heading>
-                      <Details darkText={!(i % 2 === 0)}>{description}</Details>
+                      <Heading lightText={!(i % 2 === 0)}>{headline}</Heading>
+                      <Details darkText={i % 2 === 0}>{description}</Details>
                       <BtnWrapper>
                         <CtaButton
                           label={btnLabel}
                           route={btnRoute}
-                          primary={i % 2 === 0 ? 1 : 0}
-                          dark={i % 2 === 0 ? 1 : 0}
+                          primary={i % 2 === 0 ? 0 : 1}
+                          dark={i % 2 === 0 ? 0 : 1}
                         />
                       </BtnWrapper>
                     </TextWrapper>
