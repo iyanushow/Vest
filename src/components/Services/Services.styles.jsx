@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${(props) => props.theme.color.white};
+  background: ${(props) => props.theme.color.defaultBlack};
 
   @media (max-width: 768px) {
     height: 1100px;
@@ -38,7 +38,7 @@ export const Wrapper = styled.div`
 export const Heading = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 64px;
-
+  color: ${(props) => props.theme.color.white};
   @media (max-width: 480px) {
     font-size: 2rem;
   }
